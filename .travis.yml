@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - 8
+cache:
+  directories:
+    - ".cache"
+  - yarn
+
+install:
+  - yarn
+
+script:
+  - yarn run build
+  - ./deploy.sh > /dev/null
