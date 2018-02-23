@@ -4,7 +4,7 @@ node_js:
 cache:
   directories:
     - ".cache"
-  - yarn
+  yarn: true
 
 install:
   - yarn
