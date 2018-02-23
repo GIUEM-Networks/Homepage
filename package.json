@@ -6,7 +6,6 @@
   "scripts": {
     "start": "parcel src/index.html",
     "clean": "del dist .cache",
-    "prebuild": "yarn run clean",
     "build": "parcel build src/index.html --public-url ./"
   },
   "dependencies": {
