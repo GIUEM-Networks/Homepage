@@ -11,5 +11,6 @@ install:
 
 script:
   - yarn run build
+  - echo "giuem.com" > ./dist/CNAME
   - chmod +x ./deploy.sh
   - ./deploy.sh > /dev/null
