@@ -1,0 +1,46 @@
+@import 'nib/index'
+
+normalize-base()
+
+$color-bg = #111
+$color-text = #efefef
+
+html, body
+  height: 100%
+
+html
+  font-size: 16px
+  background: $color-bg
+  color: $color-text
+  font-family: 'Montserrat', sans-serif;
+
+#app
+  width: 100vw
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+
+.title
+  position: relative
+  font-size: 9vw
+  font-weight: bold
+  // margin: 0 1rem
+  letter-spacing: -0.03em
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  text-transform: uppercase
+  span 
+    display: block
+    position: relative
+    flex: none
+    white-space: pre
+
+.shapes
+  top: 0
+  left: 0
+  position: fixed
+  z-index: -1
