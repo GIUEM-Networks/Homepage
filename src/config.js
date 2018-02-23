@@ -8,36 +8,36 @@ export const effect = {
     shapeTypes: ["rect", "polygon"],
     totalShapes: 1
   },
-  // hide: {
-  //   lettersAnimationOpts: {
-  //     duration: () => anime.random(800, 1000),
-  //     delay: () => anime.random(0, 80),
-  //     easing: "easeInOutExpo",
-  //     opacity: 0,
-  //     translateY: "300%",
-  //     rotateZ: () => anime.random(-50, 50)
-  //   },
-  //   shapesAnimationOpts: {
-  //     duration: 350,
-  //     easing: "easeOutExpo",
-  //     translateX: t => [t.dataset.tx, anime.random(-25, 25)],
-  //     translateY: t => [t.dataset.ty, anime.random(-25, 25)],
-  //     scale: 1,
-  //     rotate: 0,
-  //     opacity: {
-  //       value: 0,
-  //       duration: 200,
-  //       easing: "linear"
-  //     }
-  //   }
-  // },
+  hide: {
+    lettersAnimationOpts: {
+      duration: () => anime.random(800, 1000),
+      delay: () => anime.random(0, 80),
+      easing: "easeInOutExpo",
+      opacity: 0,
+      translateY: "300%",
+      rotateZ: () => anime.random(-50, 50)
+    },
+    shapesAnimationOpts: {
+      duration: 350,
+      easing: "easeOutExpo",
+      translateX: t => [t.dataset.tx, anime.random(-25, 25)],
+      translateY: t => [t.dataset.ty, anime.random(-25, 25)],
+      scale: 1,
+      rotate: 0,
+      opacity: {
+        value: 0,
+        duration: 200,
+        easing: "linear"
+      }
+    }
+  },
   show: {
     lettersAnimationOpts: {
       duration: 800,
       delay: () => anime.random(0, 75),
       easing: "easeInOutExpo",
       opacity: [0, 1],
-      translateY: ["-250%", "0%"],
+      translateY: ["-300%", "0%"],
       rotate: () => [anime.random(-50, 50), 0]
     },
     shapesAnimationOpts: {
