@@ -35,13 +35,13 @@ export const effect = {
     lettersAnimationOpts: {
       duration: 800,
       delay: () => anime.random(0, 75),
-      easing: "easeInOutExpo",
+      easing: "easeInOutQuart",
       opacity: [0, 1],
       translateY: ["-300%", "0%"],
       rotate: () => [anime.random(-50, 50), 0]
     },
     shapesAnimationOpts: {
-      duration: () => 2000,
+      duration: 3200,
       easing: "easeOutExpo",
       translateY: t => {
         const ty = anime.random(-300, 300);
